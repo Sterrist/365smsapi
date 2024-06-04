@@ -7,6 +7,8 @@
 **Инициализация**
 
 ```
+from three65smsapi import three65sms
+
 # Это пример, вам нужно подставить вместо 'your api key' свой API ключ(Можно получить тут: https://365sms.ru/account)
 client = three65sms(api_key='your api key')
 ```
@@ -17,7 +19,7 @@ client = three65sms(api_key='your api key')
 client.getnumbersstatus(country='0', operator='any') # Вместо 0 в country надо подставить id своей страны(Получить тут: https://365sms.ru/api365), в поле operator можно оставить any, но лучше указать оператора(Получить там же где и id страны)
 ```
 
-**Получение количеста доступных номеров**
+**Получение количества доступных номеров**
 
 ```
 client.getnumbersstatus(country='0', operator='any') # Вместо 0 в country надо подставить id своей страны(Получить тут: https://365sms.ru/api365), в поле operator можно оставить any, но лучше указать оператора(Получить там же где и id страны)
